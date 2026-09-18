@@ -69,7 +69,7 @@ Abrir o `index.html` direto do disco também funciona. Só o `404.html` depende 
 | Hostinger, HostGator, Locaweb, cPanel (Apache) | envie o conteúdo de `eas-site/` para `public_html/`. O `.htaccess` já cuida de HTTPS, cache e 404. |
 | Netlify / Cloudflare Pages | arraste a pasta ou conecte o repositório. O `404.html` é detectado automaticamente. |
 | Vercel | importe como projeto estático, sem framework e sem comando de build. |
-| GitHub Pages | publique a pasta na raiz do branch. O `404.html` é detectado automaticamente. |
+| **GitHub Pages (em uso)** | publique o conteúdo na raiz do branch. O arquivo `CNAME` fixa o domínio principal `egeradvancedsystems.com` (sem www); em *Settings → Pages* o domínio deve ser o mesmo e **Enforce HTTPS** deve estar marcado. O `.htaccess` não tem efeito aqui e pode ficar fora do repositório. |
 
 Nas opções sem Apache, o `.htaccess` é ignorado. Configure HTTPS e o redirecionamento de `www` pelo painel da plataforma.
 
