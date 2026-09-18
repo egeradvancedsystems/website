@@ -22,6 +22,7 @@
   --flux: linear-gradient(120deg, #00D3C4, #1E6BFF);
   --pulse: linear-gradient(120deg, #7A5CFF, #FF3D8B);
   --forge: linear-gradient(120deg, #FF3D8B, #FFB020);
+  --orbit: linear-gradient(120deg, #1E6BFF, #7A5CFF);
 
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
@@ -79,6 +80,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .eyebrow::before { content: ""; flex: none; width: 18px; height: 2px; border-radius: 2px; background: var(--flux); }
 .eyebrow--pulse::before { background: var(--pulse); }
 .eyebrow--forge::before { background: var(--forge); }
+.eyebrow--orbit::before { background: var(--orbit); }
 
 .display { font-size: clamp(42px, 6.6vw, 84px); line-height: 1.02; }
 .h2 { font-size: clamp(30px, 3.8vw, 48px); line-height: 1.05; }
@@ -87,10 +89,11 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .muted { color: var(--mute); }
 .mono { font-family: var(--font-mono); }
 
-.t-flux, .t-pulse, .t-forge { -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.t-flux, .t-pulse, .t-forge, .t-orbit { -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .t-flux { background-image: var(--flux); }
 .t-pulse { background-image: var(--pulse); }
 .t-forge { background-image: var(--forge); }
+.t-orbit { background-image: var(--orbit); }
 
 .section-head { max-width: 68ch; margin-bottom: var(--s6); }
 .section-head .h2 { margin: 18px 0 18px; }
@@ -295,6 +298,7 @@ body.menu-open { overflow: hidden; }
 .service-card--pulse::before { background: radial-gradient(circle, rgba(122, 92, 255, .35), transparent 65%); }
 .service-card--flux::before { background: radial-gradient(circle, rgba(30, 107, 255, .35), transparent 65%); }
 .service-card--forge::before { background: radial-gradient(circle, rgba(255, 61, 139, .3), transparent 65%); }
+.service-card--orbit::before { background: radial-gradient(circle, rgba(122, 92, 255, .32), transparent 65%); }
 .service-card:hover { border-color: #33404E; transform: translateY(-3px); }
 .service-card:hover::before { opacity: 1; }
 .service-card .wing { width: 58px; margin-bottom: 10px; }
@@ -306,6 +310,7 @@ body.menu-open { overflow: hidden; }
 .checklist li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 2px; border-radius: 2px; background: var(--flux); }
 .service-card--pulse .checklist li::before { background: var(--pulse); }
 .service-card--forge .checklist li::before { background: var(--forge); }
+.service-card--orbit .checklist li::before, .checklist--orbit li::before { background: var(--orbit); }
 .service-card .link-arrow { margin-top: auto; padding-top: 12px; }
 .service-card .link-arrow::after { content: ""; position: absolute; inset: 0; }
 

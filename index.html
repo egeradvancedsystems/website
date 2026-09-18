@@ -80,7 +80,8 @@
       "knowsAbout": [
         "Sistemas embarcados", "Firmware", "C++", "Qt", "QML", "LVGL", "STM32", "NXP", "Microchip PIC", "Atmel AVR",
         "Linux embarcado", "Yocto Project", "Android embarcado", "Kotlin", "Java", "Spring Boot",
-        "Interfaces homem-máquina (IHM)", "Telemetria de equipamentos", "Integração com cloud"
+        "Interfaces homem-máquina (IHM)", "Telemetria de equipamentos", "Integração com cloud",
+        "Plataformas web", "Desenvolvimento de backend", "APIs REST"
       ],
       "sameAs": ["https://www.linkedin.com/company/eger-advanced-systems"],
       "contactPoint": {
@@ -95,7 +96,8 @@
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://egeradvancedsystems.com/pages/sistemas-embarcados.html#service", "name": "Desenvolvimento de sistemas embarcados" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://egeradvancedsystems.com/pages/consultoria.html#service", "name": "Consultoria em engenharia de software embarcado" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://egeradvancedsystems.com/pages/integracao-cloud.html#service", "name": "Integração de equipamentos com cloud" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://egeradvancedsystems.com/pages/integracao-cloud.html#service", "name": "Integração de equipamentos com cloud" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://egeradvancedsystems.com/pages/plataformas-web.html#service", "name": "Engenharia de plataformas web e cloud" } }
         ]
       }
     },
@@ -123,6 +125,7 @@
       "mainEntity": [
         { "@type": "Question", "name": "Que tipo de empresa contrata a Eger Advanced Systems?", "acceptedAnswer": { "@type": "Answer", "text": "Fabricantes industriais e empresas de tecnologia com produto embarcado em desenvolvimento ou já em campo, que precisam de engenharia especializada sem montar um time interno completo para cada camada: firmware, Linux embarcado, interface e cloud." } },
         { "@type": "Question", "name": "Quais tecnologias a Eger utiliza?", "acceptedAnswer": { "@type": "Answer", "text": "C++ para firmware em microcontroladores STM32, NXP, Microchip e Atmel; Linux embarcado com Yocto Project; Android embarcado com Kotlin, Java e C++; interfaces em Qt/QML e LVGL; e backend em Java com Spring Boot para integração dos equipamentos com a cloud." } },
+        { "@type": "Question", "name": "Vocês atendem só a parte web ou cloud, sem projeto embarcado?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Atuamos em plataformas web e cloud já em produção, com backend e APIs em Java Spring Boot, escala, integração de sistemas e consultoria de arquitetura, como extensão do seu time ou em projeto fechado. Não é preciso ter nenhum equipamento envolvido." } },
         { "@type": "Question", "name": "Vocês desenvolvem o hardware também?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, em parceria. O projeto de hardware (esquemático, layout de placa e protótipos) fica com a nossa empresa parceira de engenharia de hardware, e o software embarcado, a interface e a cloud ficam com a Eger. Para o cliente, é uma proposta e um ponto de contato técnico." } },
         { "@type": "Question", "name": "Quem fica com o código-fonte?", "acceptedAnswer": { "@type": "Answer", "text": "O cliente. A entrega inclui código-fonte, documentação de arquitetura e instruções de build reprodutíveis, para que o seu time consiga manter e evoluir o sistema." } },
         { "@type": "Question", "name": "Vocês assumem projetos em andamento ou código legado?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O trabalho começa com um diagnóstico técnico do código, do hardware e do processo de build, e termina com um plano priorizado: o que corrigir, o que reescrever e o que manter." } },
@@ -143,6 +146,7 @@
     <linearGradient id="g-flux" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#00D3C4"/><stop offset="1" stop-color="#1E6BFF"/></linearGradient>
     <linearGradient id="g-pulse" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#7A5CFF"/><stop offset="1" stop-color="#FF3D8B"/></linearGradient>
     <linearGradient id="g-forge" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3D8B"/><stop offset="1" stop-color="#FFB020"/></linearGradient>
+    <linearGradient id="g-orbit" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#1E6BFF"/><stop offset="1" stop-color="#7A5CFF"/></linearGradient>
     <linearGradient id="g-icon" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#00D3C4"/><stop offset="1" stop-color="#1E6BFF"/></linearGradient>
   </defs>
 </svg>
@@ -173,6 +177,10 @@
             <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-forge)"/></svg>
             <div><strong>Integração com cloud</strong><span>Telemetria, gestão de frota e APIs em Java Spring Boot.</span></div>
           </a>
+          <a href="pages/plataformas-web.html">
+            <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-orbit)"/></svg>
+            <div><strong>Plataformas web e cloud</strong><span>Backend, APIs e cloud para plataformas em produção, sem envolver hardware.</span></div>
+          </a>
         </div>
       </div>
       <a class="nav__link" href="#stack">Stack</a>
@@ -193,6 +201,7 @@
   <a href="pages/sistemas-embarcados.html">Sistemas embarcados</a>
   <a href="pages/consultoria.html">Consultoria técnica</a>
   <a href="pages/integracao-cloud.html">Integração com cloud</a>
+  <a href="pages/plataformas-web.html">Plataformas web e cloud</a>
   <p style="margin-top:28px">Empresa</p>
   <a href="#stack">Stack</a>
   <a href="#contratacao">Modelos de contratação</a>
@@ -395,6 +404,33 @@
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SÓ WEB E CLOUD ================= -->
+  <section class="section" id="web" aria-labelledby="web-title">
+    <div class="wrap hw">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--orbit">Só web e cloud</p>
+        <h2 class="h2" id="web-title" style="margin:18px 0 18px">Sua plataforma não tem hardware? Também atendemos.</h2>
+        <p class="muted">Para empresas com plataforma web ou cloud em produção que precisam de engenharia sênior de backend: evoluir funcionalidades, escalar, integrar sistemas ou estabilizar o que já roda. Dentro do seu time, do seu repositório e da sua cloud.</p>
+        <div class="btn-row" style="margin-top:32px">
+          <a class="btn btn--primary" href="pages/plataformas-web.html">Plataformas web e cloud
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="pages/consultoria.html#web-cloud">Consultoria de backend e cloud</a>
+        </div>
+      </div>
+      <div class="panel reveal" data-delay="1">
+        <h3>Onde entramos na sua plataforma</h3>
+        <ul class="checklist checklist--orbit">
+          <li>Backend e APIs em Java Spring Boot</li>
+          <li>Escala, desempenho e estabilidade em produção</li>
+          <li>Integração com ERP, parceiros e sistemas legados</li>
+          <li>Cloud, implantação automatizada e observabilidade</li>
+          <li>Revisão de arquitetura e due diligence técnica</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -614,6 +650,10 @@
           <p>C++ para firmware em microcontroladores STM32, NXP, Microchip e Atmel; Linux embarcado com Yocto Project; Android embarcado com Kotlin, Java e C++; interfaces em Qt/QML e LVGL; e backend em Java com Spring Boot para integração dos equipamentos com a cloud.</p>
         </details>
         <details>
+          <summary>Vocês atendem só a parte web ou cloud, sem projeto embarcado?</summary>
+          <p>Sim. Atuamos em plataformas web e cloud já em produção, com backend e APIs em Java Spring Boot, escala, integração de sistemas e consultoria de arquitetura, como extensão do seu time ou em projeto fechado. Não é preciso ter nenhum equipamento envolvido.</p>
+        </details>
+        <details>
           <summary>Vocês desenvolvem o hardware também?</summary>
           <p>Sim, em parceria. O projeto de hardware (esquemático, layout de placa e protótipos) fica com a nossa empresa parceira de engenharia de hardware, e o software embarcado, a interface e a cloud ficam com a Eger. Para o cliente, é uma proposta e um ponto de contato técnico.</p>
         </details>
@@ -677,6 +717,7 @@
             <option value="Sistemas embarcados">Sistemas embarcados</option>
             <option value="Consultoria técnica">Consultoria técnica</option>
             <option value="Integração com cloud">Integração com cloud</option>
+            <option value="Plataformas web e cloud">Plataformas web e cloud</option>
             <option value="Resgate de projeto">Resgate de projeto</option>
             <option value="Outro assunto">Outro assunto</option>
           </select>
@@ -715,6 +756,7 @@
           <li><a href="pages/sistemas-embarcados.html">Sistemas embarcados</a></li>
           <li><a href="pages/consultoria.html">Consultoria técnica</a></li>
           <li><a href="pages/integracao-cloud.html">Integração com cloud</a></li>
+          <li><a href="pages/plataformas-web.html">Plataformas web e cloud</a></li>
         </ul>
       </nav>
       <nav class="footer__col" aria-labelledby="ft-empresa">
