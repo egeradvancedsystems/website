@@ -1,0 +1,53 @@
+# Eger Advanced Systems — configuração para hospedagem Apache (Hostinger, HostGator, Locaweb, cPanel...)
+# Em Netlify, Vercel, Cloudflare Pages ou GitHub Pages este arquivo é ignorado (veja README.md).
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# ---------- HTTPS e domínio canônico (sem www) ----------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://egeradvancedsystems.com%{REQUEST_URI} [L,R=301]
+
+  # /index.html -> /
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [L,R=301]
+</IfModule>
+
+# ---------- Tipos de arquivo ----------
+AddType application/manifest+json .webmanifest
+AddType image/svg+xml .svg
+AddType text/markdown .md
+AddDefaultCharset utf-8
+AddCharset utf-8 .txt .xml .css .js .webmanifest
+
+# ---------- Compressão ----------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/markdown application/javascript application/json application/manifest+json application/xml image/svg+xml
+</IfModule>
+
+# ---------- Cache ----------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 6 months"
+  ExpiresByType image/x-icon "access plus 6 months"
+  ExpiresByType application/manifest+json "access plus 1 week"
+</IfModule>
+
+# ---------- Segurança ----------
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; form-action 'self' mailto:; frame-ancestors 'self'; base-uri 'self'"
+</IfModule>

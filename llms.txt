@@ -1,0 +1,55 @@
+# Eger Advanced Systems
+
+> Empresa brasileira de engenharia de software focada em sistemas embarcados, consultoria técnica e integração de equipamentos com plataformas em cloud. Atende fabricantes industriais e empresas de tecnologia com produto embarcado: firmware, Linux embarcado, Android dedicado, interfaces homem-máquina (IHM) e backend em cloud, desenvolvidos pela mesma equipe.
+
+Posicionamento: "Não somos uma casa de automação. Somos o braço de engenharia de software que um grupo industrial usa quando o problema não tem produto de prateleira."
+
+## Serviços
+
+- [Sistemas embarcados](https://egeradvancedsystems.com/pages/sistemas-embarcados.html): firmware em C++ para microcontroladores STM32, NXP, Microchip e Atmel, bring-up de placa e drivers, Linux embarcado com Yocto Project, Android dedicado, interfaces em Qt/QML e LVGL, bootloader e atualização remota com rollback.
+- [Consultoria técnica](https://egeradvancedsystems.com/pages/consultoria.html): revisão de arquitetura, escolha de plataforma (MCU, Linux ou Android; Qt ou LVGL), diagnóstico de falhas em campo, auditoria de código e de build, migração de legado e extensão de time.
+- [Integração com cloud](https://egeradvancedsystems.com/pages/integracao-cloud.html): agente embarcado de telemetria com buffer offline, ingestão de dados e APIs em Java Spring Boot, gestão de dispositivos, atualização remota em lote e integração com sistemas corporativos.
+
+## Hardware em parceria
+
+Em parceria com uma empresa de engenharia de hardware, a Eger entrega o produto completo: o parceiro cuida do projeto de hardware (esquemático, layout de placa e protótipos) e a Eger do firmware, do sistema operacional embarcado, da interface e da cloud. Para o cliente, é uma proposta única e um ponto de contato técnico.
+
+## Stack
+
+- Microcontrolador: C++, STM32, NXP, Microchip (PIC), Atmel (AVR/SAM), ARM Cortex-M
+- Linux embarcado: Linux, Yocto Project
+- Android embarcado: Android, Kotlin, Java, C++ (NDK)
+- Interface (IHM): Qt, QML, LVGL
+- Cloud e backend: Java, Spring Boot, APIs REST
+
+## Modelos de contratação
+
+- Projeto fechado: escopo, arquitetura, cronograma e critérios de aceite definidos no início.
+- Extensão de time: engenheiros dentro do repositório e do processo do cliente.
+- Consultoria técnica: decisão de arquitetura e plano técnico antes do investimento.
+- Resgate de projeto: projetos atrasados, código legado sem dono, falhas intermitentes em campo.
+
+## Setores
+
+Equipamentos industriais, mobilidade e veículos pesados, energia, agrícola, refrigeração, médico e laboratório, e produtos conectados.
+
+## Empresas atendidas
+
+Adesso Technology, Flow Marine Systems, Diverbras, Vertraut e RT CollMax Solutions.
+
+## Compromissos
+
+- O código-fonte, a documentação de arquitetura e o build reprodutível ficam com o cliente.
+- Validação em hardware real desde o início do projeto.
+- Acordo de confidencialidade (NDA) disponível antes de qualquer detalhe técnico.
+
+## Contato
+
+- WhatsApp: https://wa.me/5551981214579
+- LinkedIn: https://www.linkedin.com/company/eger-advanced-systems
+- Site: https://egeradvancedsystems.com/
+- Página de contato: https://egeradvancedsystems.com/#contato
+
+## Opcional
+
+- [Política de Privacidade](https://egeradvancedsystems.com/pages/privacidade.html)

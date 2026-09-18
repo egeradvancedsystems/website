@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add('js')</script>
+
+<title>Sistemas embarcados: STM32, NXP, Yocto, Qt e LVGL | Eger</title>
+<meta name="description" content="Firmware C++ para STM32, NXP e Microchip, Linux com Yocto, Android e interfaces Qt/QML e LVGL para equipamentos industriais, com código entregue ao cliente.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Eger Advanced Systems">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://egeradvancedsystems.com/pages/sistemas-embarcados.html">
+<link rel="alternate" hreflang="pt-BR" href="https://egeradvancedsystems.com/pages/sistemas-embarcados.html">
+<link rel="alternate" hreflang="x-default" href="https://egeradvancedsystems.com/pages/sistemas-embarcados.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Eger Advanced Systems">
+<meta property="og:title" content="Sistemas embarcados — Eger Advanced Systems">
+<meta property="og:description" content="Firmware C++ para STM32, NXP e Microchip, Linux com Yocto, Android e interfaces Qt/QML e LVGL para equipamentos industriais, com código entregue ao cliente.">
+<meta property="og:url" content="https://egeradvancedsystems.com/pages/sistemas-embarcados.html">
+<meta property="og:image" content="https://egeradvancedsystems.com/assets/img/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Eger Advanced Systems — engenharia de software embarcado, da placa à nuvem">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sistemas embarcados — Eger Advanced Systems">
+<meta name="twitter:description" content="Firmware C++ para STM32, NXP e Microchip, Linux com Yocto, Android e interfaces Qt/QML e LVGL para equipamentos industriais, com código entregue ao cliente.">
+<meta name="twitter:image" content="https://egeradvancedsystems.com/assets/img/og-image.png">
+
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#0B0E12">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-title" content="Eger">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="alternate" type="text/markdown" href="../llms.txt" title="Resumo do site para LLMs">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/main.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://egeradvancedsystems.com/pages/sistemas-embarcados.html#service",
+      "name": "Desenvolvimento de sistemas embarcados",
+      "serviceType": "Desenvolvimento de firmware e software embarcado",
+      "description": "Firmware C++ para STM32, NXP e Microchip, Linux com Yocto, Android e interfaces Qt/QML e LVGL para equipamentos industriais, com código entregue ao cliente.",
+      "url": "https://egeradvancedsystems.com/pages/sistemas-embarcados.html",
+      "inLanguage": "pt-BR",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Fabricantes industriais e empresas de tecnologia"
+      },
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://egeradvancedsystems.com/#organization",
+        "name": "Eger Advanced Systems",
+        "url": "https://egeradvancedsystems.com/"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://egeradvancedsystems.com/pages/sistemas-embarcados.html#webpage",
+      "url": "https://egeradvancedsystems.com/pages/sistemas-embarcados.html",
+      "name": "Desenvolvimento de sistemas embarcados | Eger Advanced Systems",
+      "isPartOf": {
+        "@id": "https://egeradvancedsystems.com/#website"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://egeradvancedsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Desenvolvimento de sistemas embarcados",
+          "item": "https://egeradvancedsystems.com/pages/sistemas-embarcados.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-flux" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#00D3C4"/><stop offset="1" stop-color="#1E6BFF"/></linearGradient>
+    <linearGradient id="g-pulse" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#7A5CFF"/><stop offset="1" stop-color="#FF3D8B"/></linearGradient>
+    <linearGradient id="g-forge" x1="6" y1="46" x2="58" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3D8B"/><stop offset="1" stop-color="#FFB020"/></linearGradient>
+    <linearGradient id="g-icon" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#00D3C4"/><stop offset="1" stop-color="#1E6BFF"/></linearGradient>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="../index.html" aria-label="Eger Advanced Systems — página inicial">
+      <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-flux)"/></svg>
+      <span class="brand__name"><b>EGER</b><small>ADVANCED SYSTEMS</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <div class="nav__item">
+        <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="mega-servicos">
+          Serviços
+          <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="mega-servicos">
+          <a href="../pages/sistemas-embarcados.html" aria-current="page">
+            <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-pulse)"/></svg>
+            <div><strong>Sistemas embarcados</strong><span>Firmware para STM32, NXP e Microchip, Linux com Yocto, Android e IHM Qt/LVGL.</span></div>
+          </a>
+          <a href="../pages/consultoria.html">
+            <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-flux)"/></svg>
+            <div><strong>Consultoria técnica</strong><span>Arquitetura, diagnóstico, escolha de plataforma e extensão do seu time.</span></div>
+          </a>
+          <a href="../pages/integracao-cloud.html">
+            <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-forge)"/></svg>
+            <div><strong>Integração com cloud</strong><span>Telemetria, gestão de frota e APIs em Java Spring Boot.</span></div>
+          </a>
+        </div>
+      </div>
+      <a class="nav__link" href="../index.html#stack">Stack</a>
+      <a class="nav__link" href="../index.html#contratacao">Contratação</a>
+      <a class="nav__link nav__link--hide-md" href="../index.html#setores">Setores</a>
+      <a class="nav__link nav__link--hide-md" href="../index.html#faq">FAQ</a>
+    </nav>
+
+    <div class="site-header__cta">
+      <a class="btn btn--primary btn--sm" href="../index.html#contato">Falar com engenharia</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menu móvel">
+  <p>Serviços</p>
+  <a href="../pages/sistemas-embarcados.html" aria-current="page">Sistemas embarcados</a>
+  <a href="../pages/consultoria.html">Consultoria técnica</a>
+  <a href="../pages/integracao-cloud.html">Integração com cloud</a>
+  <p style="margin-top:28px">Empresa</p>
+  <a href="../index.html#stack">Stack</a>
+  <a href="../index.html#contratacao">Modelos de contratação</a>
+  <a href="../index.html#setores">Setores</a>
+  <a href="../index.html#processo">Processo</a>
+  <a href="../index.html#faq">Perguntas frequentes</a>
+  <a class="btn btn--primary" href="../index.html#contato">Falar com engenharia</a>
+</nav>
+
+<main id="conteudo">
+
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="tech-grid" aria-hidden="true"></div>
+    <div class="glow glow--violet" aria-hidden="true"></div>
+    <div class="wrap page-hero__grid">
+      <div>
+        <nav aria-label="Trilha de navegação"><ol class="breadcrumb"><li><a href="../index.html">Início</a></li><li><span aria-current="page">Sistemas embarcados</span></li></ol></nav>
+        <p class="eyebrow eyebrow--pulse" style="margin-top:34px">Serviço · Sistemas embarcados</p>
+        <h1 id="page-title">Software embarcado para equipamento que <span class="t-pulse">não pode parar.</span></h1>
+        <p class="lede">Firmware, Linux embarcado, Android e interfaces para produtos que vão para campo e precisam funcionar por anos, com restrição real de memória, tempo, consumo e custo por unidade.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="../index.html#contato">Falar com engenharia <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn--ghost" href="#detalhes">Ver detalhes</a>
+        </div>
+      </div>
+      <svg class="wing page-hero__mark" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-pulse)"/></svg>
+    </div>
+  </section>
+
+  <section class="section" id="detalhes" aria-labelledby="o-que-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--pulse">O que desenvolvemos</p>
+        <h2 class="h2" id="o-que-title">Do primeiro boot da placa à interface do operador.</h2>
+        <p>Assumimos uma camada específica ou o sistema embarcado inteiro, sempre com a arquitetura documentada e o código no repositório do cliente.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal"><span class="idx t-pulse">01</span><h3>Firmware para microcontroladores</h3><p>C++ moderno em STM32, NXP, Microchip e Atmel para controle em tempo real, aquisição de sinais, protocolos de comunicação e máquinas de estado previsíveis.</p></article>
+        <article class="feature reveal" data-delay="1"><span class="idx t-pulse">02</span><h3>Bring-up e drivers</h3><p>Placa nova ligando pela primeira vez: clocks, memória, periféricos, drivers e firmware de teste para a linha de produção.</p></article>
+        <article class="feature reveal" data-delay="2"><span class="idx t-pulse">03</span><h3>Linux embarcado com Yocto</h3><p>BSP, device tree e uma imagem de produção mínima, com boot rápido, sistema de arquivos protegido e build reprodutível.</p></article>
+        <article class="feature reveal"><span class="idx t-pulse">04</span><h3>Android dedicado</h3><p>Apps em Kotlin e Java e camada nativa em C++ para equipamentos com Android, integrados a periféricos e ao microcontrolador da placa.</p></article>
+        <article class="feature reveal" data-delay="1"><span class="idx t-pulse">05</span><h3>Interfaces Qt/QML e LVGL</h3><p>IHM touch, painéis de instrumentos e telas de diagnóstico, do microcontrolador com pouca RAM ao Linux com GPU.</p></article>
+        <article class="feature reveal" data-delay="2"><span class="idx t-pulse">06</span><h3>Atualização em campo</h3><p>Bootloader, atualização remota com rollback e versionamento de firmware para corrigir sem mandar técnico ao cliente.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="plataforma-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--pulse">Escolha de plataforma</p>
+        <h2 class="h2" id="plataforma-title">MCU, Linux ou Android? Depende da restrição.</h2>
+        <p>A plataforma define custo por unidade, tempo de boot, consumo e o que o time vai conseguir manter. É a primeira decisão que ajudamos a tomar.</p>
+      </div>
+      <div class="compare">
+        <article class="feature reveal">
+          <span class="idx t-pulse">MCU + LVGL</span>
+          <h3>Microcontrolador</h3>
+          <dl>
+            <dt>Quando faz sentido</dt><dd>Custo por unidade baixo, boot instantâneo, consumo mínimo e interface simples a intermediária.</dd>
+            <dt>Stack</dt><dd>C++, STM32, NXP, Microchip, Atmel, LVGL</dd>
+          </dl>
+        </article>
+        <article class="feature reveal" data-delay="1">
+          <span class="idx t-pulse">Linux + Qt</span>
+          <h3>Linux embarcado</h3>
+          <dl>
+            <dt>Quando faz sentido</dt><dd>Interface rica, conectividade, vários processos e atualização de sistema completa em campo.</dd>
+            <dt>Stack</dt><dd>C++, Linux, Yocto, Qt/QML</dd>
+          </dl>
+        </article>
+        <article class="feature reveal" data-delay="2">
+          <span class="idx t-pulse">Android</span>
+          <h3>Android dedicado</h3>
+          <dl>
+            <dt>Quando faz sentido</dt><dd>Telas grandes, multimídia, ecossistema de apps e integração com serviços móveis.</dd>
+            <dt>Stack</dt><dd>Android, Kotlin, Java, C++ (NDK)</dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="entrega-title">
+    <div class="wrap two-col">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--pulse">Entregáveis</p>
+        <h2 class="h2" id="entrega-title" style="margin:18px 0 18px">O que fica com o seu time.</h2>
+        <p class="muted">Um sistema embarcado só termina quando outra pessoa consegue gravar, testar, atualizar e evoluir o produto sem depender de quem o escreveu.</p>
+        <div class="chips" style="margin-top:28px">
+          <span class="chip chip--violet">C++</span><span class="chip chip--violet">STM32</span><span class="chip chip--violet">NXP</span><span class="chip chip--violet">Microchip</span><span class="chip chip--violet">Atmel</span><span class="chip">Linux</span><span class="chip">Yocto</span><span class="chip chip--blue">Android</span><span class="chip chip--blue">Kotlin</span><span class="chip chip--blue">Java</span><span class="chip">Qt</span><span class="chip">QML</span><span class="chip">LVGL</span>
+        </div>
+      </div>
+      <div class="panel reveal" data-delay="1">
+        <h3>Em todo projeto</h3>
+        <ul class="checklist">
+            <li>Código-fonte no repositório do cliente, com histórico</li>
+            <li>Documento de arquitetura e decisões técnicas</li>
+            <li>Build reprodutível e integração contínua</li>
+            <li>Testes automatizados e relatório de validação em hardware</li>
+            <li>Procedimento de gravação e de atualização em campo</li>
+            <li>Sessões de transferência técnica para o seu time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rel-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Outras frentes</p>
+        <h2 class="h2" id="rel-title">A mesma equipe cuida das outras camadas.</h2>
+      </div>
+      <div class="related-grid">
+        <article class="service-card service-card--flux reveal">
+          <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-flux)"/></svg>
+          <h3>Consultoria técnica</h3>
+          <p>Arquitetura, diagnóstico, escolha de plataforma e extensão do seu time.</p>
+          <a class="link-arrow" href="../pages/consultoria.html">Consultoria técnica
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+        <article class="service-card service-card--forge reveal">
+          <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-forge)"/></svg>
+          <h3>Integração com cloud</h3>
+          <p>Telemetria, gestão de frota e APIs em Java Spring Boot.</p>
+          <a class="link-arrow" href="../pages/integracao-cloud.html">Integração com cloud
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="tech-grid" aria-hidden="true"></div>
+    <div class="glow glow--blue" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2 id="cta-title">Tem uma placa esperando firmware?</h2>
+      <p>Conte qual é o equipamento, a plataforma e o prazo. Respondemos com uma leitura técnica e um caminho possível.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="../index.html#contato">Falar com engenharia <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn--ghost" href="../index.html#contato" data-contact="whatsapp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 00-7.7 13.6L3 21l4.5-1.2A9 9 0 1012 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.2 8.2c-.4 0-.9.5-.9 1.3 0 2.6 3.5 6 6.2 6 .8 0 1.3-.5 1.3-.9l-.3-1.1-1.8-.8-.8.9c-1.2-.5-2.3-1.6-2.8-2.8l.9-.8-.8-1.8z" fill="currentColor"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="../index.html" aria-label="Eger Advanced Systems — página inicial">
+          <svg class="wing" viewBox="1 20 62 27" aria-hidden="true"><path d="M32 21 L2 40 L12 45.5 L22 38.5 L32 46 L42 38.5 L52 45.5 L62 40 Z" fill="url(#g-flux)"/></svg>
+          <span class="brand__name"><b>EGER</b><small>ADVANCED SYSTEMS</small></span>
+        </a>
+        <p>Engenharia de software para sistemas embarcados, consultoria técnica e integração de equipamentos com a cloud.</p>
+      </div>
+      <nav class="footer__col" aria-labelledby="ft-servicos">
+        <h2 id="ft-servicos">Serviços</h2>
+        <ul>
+          <li><a href="../pages/sistemas-embarcados.html">Sistemas embarcados</a></li>
+          <li><a href="../pages/consultoria.html">Consultoria técnica</a></li>
+          <li><a href="../pages/integracao-cloud.html">Integração com cloud</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="ft-empresa">
+        <h2 id="ft-empresa">Empresa</h2>
+        <ul>
+          <li><a href="../index.html#stack">Stack</a></li>
+          <li><a href="../index.html#contratacao">Contratação</a></li>
+          <li><a href="../index.html#processo">Processo</a></li>
+          <li><a href="../index.html#faq">Perguntas frequentes</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="ft-contato">
+        <h2 id="ft-contato">Contato</h2>
+        <ul>
+          <li><a href="../index.html#contato" data-contact="email">E-mail</a></li>
+          <li><a href="../index.html#contato" data-contact="whatsapp">WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/company/eger-advanced-systems" rel="noopener" target="_blank">LinkedIn</a></li>
+          <li><a href="../pages/privacidade.html">Privacidade</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Eger Advanced Systems. Todos os direitos reservados.</span>
+      <span class="mono">Software · Firmware · Sistemas embarcados</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
