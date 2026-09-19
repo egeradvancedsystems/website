@@ -127,7 +127,7 @@
      o que evita a maior parte dos robôs que coletam endereços para spam.
      Para trocar os dados, altere só este objeto. */
   var CONTACT = {
-    user: 'contato',
+    user: 'alexandreegermarques',
     domain: ['egeradvancedsystems', 'com'],
     phone: ['55', '51', '981214579'],
     waText: 'Olá! Vim pelo site da Eger Advanced Systems e gostaria de falar sobre um projeto.'
